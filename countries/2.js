@@ -1,4 +1,4 @@
-import list from './list'
+const countries = require('./countries')
 
 // What countries both begin and end with a vowel?
 

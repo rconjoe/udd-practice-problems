@@ -1,4 +1,4 @@
-import list from './list'
+const countries = require('./countries')
 
 // What country names are > 50% vowels?
 

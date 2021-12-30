@@ -1,11 +1,11 @@
-import list from './list'
+const countries = require('./countries')
 
 // What are all of the countries that have 'United' in the name?
 
-function solution(list) {
+function solution(countries) {
 
   // ...
 
 }
 
-console.log(solution(list))
+console.log(solution(countries))

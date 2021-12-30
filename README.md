@@ -4,6 +4,14 @@
 This is a repo containing the questions for [Underdog Devs](https://underdogdevs.org) cohort practice organized in an
 easy-to-practice format, with answers on a separate branch.
 
+**The questions are meant to be solved in this order:**
+1. `wordplay/`
+2. `countries/`
+3. `baby_names/`
+4. `nba_finals/`
+5. `billboard/`
+6. `interview_questions/`
+
 ## Supported Languages
 - JavaScript
 

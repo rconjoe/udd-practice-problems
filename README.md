@@ -33,4 +33,6 @@ easy-to-practice format, with answers on a separate branch.
 PR's are open!!!
 
 
-_maintained by [rconjoe](https://rconjoe.com)_
+_- maintained by [rconjoe](https://rconjoe.com)_
+
+**DISCLAIMER:** I didn't make any of these questions. I have no idea who did, but I am grateful to them. I made this repo from the questions at [this Dropbox link](https://paper.dropbox.com/doc/Programming-practice-problems-Qp6jAVBXAuDZWiz5x6r9J) because it makes it easier to work through them with the mentees, while also providing an opportunity to learn `git` if needed.

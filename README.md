@@ -4,6 +4,23 @@
 This is a repo containing the questions for [Underdog Devs](https://underdogdevs.org) cohort practice organized in an
 easy-to-practice format, with answers on a separate branch.
 
+## Supported Languages
+- JavaScript
+
+*Planned:*
+- TypeScript
+- Java
+- Python
+- Go
+- C
+- C++
+- C#
+
+*Desired:*
+- Kotlin
+- Swift
+- Rust
+
 ## My language isn't here!!
 PR's are open!!!
 

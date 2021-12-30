@@ -1,4 +1,4 @@
-![Underdog Devs](https://www.underdogdevs.org/images/underdogdevs-01.png)
+![Underdog Devs](/underdogdevs-01.png)
 
 ## Cohort Practice Repo
 This is a repo containing the questions for [Underdog Devs](https://underdogdevs.org) organized in an

@@ -1,4 +1,4 @@
-import list from './list'
+const words = require('./words')
 
 // How many words contain the substring 'TYPE'?
 

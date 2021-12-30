@@ -1,4 +1,4 @@
-import list from './list'
+const words = require('./words')
 
 // What is the shortest word that contains all 5 vowels?
 

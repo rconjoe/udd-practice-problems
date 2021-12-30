@@ -1,4 +1,4 @@
-import list from './list'
+const words = require('./words')
 
 // What is the longest palindrome?
 

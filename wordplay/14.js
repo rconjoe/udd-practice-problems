@@ -2,7 +2,7 @@ const words = require('./words')
 
 // What is the longest word that contains no vowels?
 
-function solution(list) {
+function solution(words) {
   const result = []
 
   // ...

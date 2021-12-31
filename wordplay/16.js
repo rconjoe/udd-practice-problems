@@ -2,7 +2,7 @@ const words = require('./words')
 
 // What is the longest palindrome?
 
-function solution(list) {
+function solution(words) {
   const result = []
 
   // ...

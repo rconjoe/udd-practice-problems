@@ -2,7 +2,7 @@ const words = require('./words')
 
 // What are all of the words containing UU?
 
-function solution(list) {
+function solution(words) {
   const result = []
 
   // ...

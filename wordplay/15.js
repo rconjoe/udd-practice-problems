@@ -2,7 +2,7 @@ const words = require('./words')
 
 // Which of the letters Q, X, and Z is the least common?
 
-function solution(list) {
+function solution(words) {
   const result = []
 
   // ...

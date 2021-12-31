@@ -10,4 +10,4 @@ function solution(list) {
   return result
 }
 
-console.log(solution(list))
+console.log(solution(words))

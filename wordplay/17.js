@@ -7,7 +7,9 @@ const { words } = require('./words')
 function solution(words) {
   const result = []
 
-  // ...
+  words.forEach(word => {
+    const chars = word.split('')
+  })
 
   return result
 }

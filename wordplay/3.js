@@ -5,7 +5,11 @@ const { words } = require('./words')
 function solution(words) {
   const result = []
 
-  // ...
+  words.forEach(word => {
+    if (word.includes('Q') && !word.includes('U')) {
+      result.push(word)
+    }
+  })
 
   return result
 }

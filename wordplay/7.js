@@ -5,7 +5,11 @@ const { words } = require('./words')
 function solution(words) {
   const result = []
 
-  // ...
+  words.forEach(word => {
+    if (word.startsWith('Y') && word.endsWith('Y')) {
+      result.push(word)
+    }
+  })
 
   return result
 }

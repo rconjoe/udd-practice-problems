@@ -5,7 +5,13 @@ const { words } = require('./words')
 function solution(words) {
   const result = []
 
-  // ...
+  const forbidden = ['A', 'E', 'I', 'O', 'U', 'Y']
+
+  words.forEach(word => {
+    if (!forbidden.some(letter => word.includes(letter))) {
+      result.push(word)
+    }
+  })
 
   return result
 }

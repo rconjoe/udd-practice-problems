@@ -5,7 +5,15 @@ const { words } = require('./words')
 function solution(words) {
   const result = []
 
-  // ...
+  // * The same solution works here since we check our alphabetical list
+  // for vowels in alphabetical order.
+  const vowels = ['A', 'E', 'I', 'O', 'U']
+
+  words.forEach(word => {
+    if (vowels.every(vowel => word.includes(vowel))) {
+      result.push(word)
+    }
+  })
 
   return result
 }

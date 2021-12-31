@@ -5,7 +5,15 @@ const { words } = require('./words')
 function solution(words) {
   const result = []
 
-  // ...
+  words.forEach(word => {
+    if (
+      word.length <= 5 &&
+      word.includes('B') &&
+      word.includes('X')
+    ) {
+      result.push(word)
+    }
+  })
 
   return result
 }

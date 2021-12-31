@@ -1,5 +1,13 @@
 ![Underdog Devs](/underdogdevs-01.png)
 
+
+⚠️ I'm looking for people to help me do a few things here: 
+  1. Add branches to support as many languages as possible
+  2. Add a Wiki section with solutions and explanations of requisite concepts
+  3. Add a special README with links to good resources
+  4. Make this a generally awesome resource for Underdogs
+
+PR's are open, there is also a discussion board, and I will follow up on any feature reqs.
 ## Cohort Practice Repo
 This is a repo containing the questions for [Underdog Devs](https://underdogdevs.org) cohort practice organized in an
 easy-to-practice format, with answers on a separate branch.
@@ -30,8 +38,6 @@ easy-to-practice format, with answers on a separate branch.
 - Rust
 
 ## My language isn't here!!
-PR's are open!!!
-
 
 _- maintained by [rconjoe](https://rconjoe.com)_
 

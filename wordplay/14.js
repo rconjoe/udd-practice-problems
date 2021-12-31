@@ -1,4 +1,4 @@
-const words = require('./words')
+const { words } = require('./words')
 
 // What is the longest word that contains no vowels?
 

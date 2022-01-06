@@ -4,6 +4,16 @@ const { oldNames, newNames } = require('./names')
 
 function solution() {
 
-  // ...
+const tie = []
 
+oldNames.forEach(old => {
+  newNames.forEach(current => {
+    if(old === current){
+      old = current
+      tie.push(old);
+    }
+  })
+})
+return tie
 }
+console.log(solution())

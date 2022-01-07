@@ -9,3 +9,37 @@
  * "Smooth" - Santana Featuring Rob Thomas
  * "Independent Women Part I" - Destiny's Child
  */
+
+
+let rawSongs = [];
+let y = {}
+    // weeks of year
+    for (var i = 0; i < 53; i++) {
+        // songs
+        for (var i = 0; i < 100; i++) {
+            top100.forEach(top => {
+                [{
+                    rank: [0],
+                    song: [1],
+                    artist: [2],
+                    last_week: [3],
+                    peak_week: [4],
+                    weeks_on_board: [5],
+                    date: [6]
+                }]
+                return rawSongs.push(top.split('\,').map(top))
+            })
+
+
+
+        }     
+
+    }
+
+    console.log(rawSongs)
+
+
+
+
+
+

@@ -1,3 +1,6 @@
+const songs = require('./songs')
+const { top100 } = require('./songs')
+
 /**
  * Print out all of the #1 songs and the artists who made them. 
  * If a song was #1 for more than one week, only print it once.

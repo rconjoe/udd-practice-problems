@@ -1,0 +1,90 @@
+function findOcc(arr, key){
+    let arr2 = [];
+      
+    arr.forEach((x)=>{
+         
+      // Checking if there is any object in arr2
+      // which contains the key value
+       if(arr2.some((val)=>{ return val[key] == x[key] })){
+           
+         // If yes! then increase the occurrence by 1
+         arr2.forEach((k)=>{
+           if(k[key] === x[key]){ 
+             k["occurrence"]++
+           }
+        })
+           
+       }else{
+         // If not! Then create a new object initialize 
+         // it with the present iteration key's value and 
+         // set the occurrence to 1
+         let a = {}
+         a[key] = x[key]
+         a["occurrence"] = 1
+         arr2.push(a);
+       }
+    })
+      
+    return arr2
+  }
+    
+    
+  let arr = [
+     {
+        employeeName: "Ram",
+        employeeId: 23
+     },
+     {
+        employeeName: "Shyam",
+        employeeId: 24
+     },
+     {
+        employeeName: "Ram",
+        employeeId: 21
+     },
+     {
+        employeeName: "Ram",
+        employeeId: 25
+     },
+     {
+        employeeName: "Kisan",
+        employeeId: 22
+     },
+     {
+        employeeName: "Shyam",
+        employeeId: 20
+     }
+  ]
+    
+  let key = "employeeName"
+  console.log(findOcc(arr, key))
+
+    // create loop top iterate and compare 
+    // create object hold number of ties starting at 2
+    // crete a set to get rid of duplicates to shorten iteration comparision 
+    // take that "set" and compare it to for-loop iteration
+    // write if statments to push into each 'times' key 
+    // count the number of times that name is in loop and push it to corresponding
+    /*
+    example:    
+    var foo = {}
+    undefined
+
+    > foo[23213] = 'swag'
+    'swag'
+
+    > foo
+    { '23213': 'swag' }
+    */
+
+
+
+    // let count = 0;
+    // let numOfShips = {}
+    // let x = ''
+    
+    // for (let i = 0; i < allMvp.length; i++){
+    //     let mvp1 = allMvp[i].mvp// to reach mvp value and compare it allMvp
+    // }   
+    // console.log(x)
+

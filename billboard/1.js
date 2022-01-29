@@ -1,5 +1,3 @@
-const { removeAllListeners } = require('process');
-const songs = require('./songs')
 const { top100 } = require('./songs')
 
 /**

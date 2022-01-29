@@ -35,8 +35,8 @@ function solution(){
     sortedPlayers.pop()
     sortedPlayers.sort(function compareNumbers(a, b) {
         return sortedPlayers[a] - sortedPlayers[b];
-      })
-      console.log(sortedPlayers)
+    })
+    console.log(sortedPlayers)
 
 
     // for(let i = 0; i < sortedPlayers.length; i++){

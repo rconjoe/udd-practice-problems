@@ -1,0 +1,18 @@
+var test_object = {}
+
+test_object["Destiny's Child"] = ["Bootylicious"];
+test_object["N'Sync"] = ["Bye Bye Bye"];
+test_object["Britney Spears"] = ["Lucky"];
+
+var key = "Destiny's Child";
+var value = "Independent Women Part I";
+
+if (!(key in test_object)) {
+    test_object[key] = [value];
+} else {
+    var existing_value = test_object[key];
+    existing_value.push(value);
+    test_object[key] = existing_value;
+ }
+
+console.log(test_object);

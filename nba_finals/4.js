@@ -9,16 +9,18 @@ const { count } = require('console');
 const {nbaFinals} = require ('./nbaData.js')
 
 function solution(){
-    let allMvp = []; //holds data of keys var
+    let allMvp = []; 
     const rawFinals = nbaFinals;
     rawFinals.shift();
     rawFinals.forEach(finals => {
         const value = finals.split(',');
-        const keys = {
-            mvp : value[4],
+        const mvp = value[4].replace(/(\r)/gm, "")
+        if (mvp !== '') {
+            allMvp.push(mvp)
         }
-        allMvp.push(keys); // pushes keys ouside of scope
     })
+
+    console.log(`first mvp: ${allMvp[0]}`)
 
     let players = [];
     for (let i = 0; i < allMvp.length; i++){
@@ -36,7 +38,6 @@ function solution(){
     sortedPlayers.sort(function compareNumbers(a, b) {
         return sortedPlayers[a] - sortedPlayers[b];
     })
-    console.log(sortedPlayers)
 
 
     // for(let i = 0; i < sortedPlayers.length; i++){

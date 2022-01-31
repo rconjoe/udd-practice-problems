@@ -21,81 +21,51 @@ function solution(){
         }
     })
     //console.log(`first mvp: ${allMvp[0]}`)
-    function noDups(array){
-        return [...new Set(array)]
-    };
 
     //this block is to count how many each player has won MVP    
-    let players ={}; // hold players and their number of MVP's
+    let players =[]; // hold players and their number of MVP's
     for (let i = 0; i < allMvp.length; i++){
-        let count = 0;
-        for(let j = 0; j < allMvp.length; j++){
-            if (allMvp[i] === allMvp[j]){
-            count++  
-            }      
-        }
-        if (count === 6){
-            players['- THE GOAT'] += `${allMvp[i]},`
-        } else if (count === 4){
-            players[`- 4 Times`] += `${allMvp[i]},`
-        } else if (count === 3){
-            players[`- 3 Times`] += `${allMvp[i]},`
-        } else if (count === 2){
-            players[`- 2 Times`] += `${allMvp[i]},`
+        if (!(allMvp[i] in players )){
+            players[allMvp[i]] = 1 //setting value to 1
+        } else { 
+            players[allMvp[i]] += 1 //adding 1 eveytime player is found
         }
     }
-    console.log(players)
 
-
-
-
-
-
-
-    // this block is sorting the players by number of times won MVP
+    // this block is to sort the players by number of wins from most to least
     let sortedPlayers = []
     for (let player in players) {
         sortedPlayers.push([player, players[player]]);
     }
-    // Object.entries(sortedPlayers).forEach(([key, value]) => {
-    //     x[(`${key}: ${value}`)]
-    // });
-    // const obj = Object.fromEntries(sortedPlayers);
-    // const value = Object.values(obj);
+    sortedPlayers.sort(function(a, b) {
+    return b[1] - a[1];
+    });
 
-    // console.log(sortedPlayers)
+    let toObj = sortedPlayers.map(function(x){ //converts array of array to array of objects
+        return{
+        key: x[0], value:x[1]
+        }
+    })
 
+    //this block is to display output in desired manner
+    let topMvps = toObj.filter(function (mvp){
 
-
-    // for(let player of obj){
-
-    // }
-    
-    // sortedPlayers.sort(function(a, b) {
-    //     return b[1] - a[1];
-    // });
-
-    
-
-    
+        if(mvp.value >= 2 && mvp.value === 6 && mvp.value === mvp.value){
+            console.log(`6 times : ${mvp.key}`)
+        } else if(mvp.value >= 2 && mvp.value === 5 && mvp.value === mvp.value){
+            console.log(`5 times : ${mvp.key}`)
+        }else if(mvp.value >= 2 && mvp.value === 4 && mvp.value === mvp.value){
+            console.log(`4 times : ${mvp.key}`)
+        }else if(mvp.value >= 2 && mvp.value === 3 && mvp.value === mvp.value){
+            console.log(`3 times : ${mvp.key}`)
+        }else if(mvp.value >= 2 && mvp.value === 2 && mvp.value === mvp.value){
+            console.log(`2 times : ${mvp.key}`)
+        }
+    })    
 }
 solution()
 
-    
-    
-         
 
-
-
-// let players =[]; // hold players and their number of MVP's
-// for (let i = 0; i < allMvp.length; i++){
-//     let x = [];
-//     let count = 0;
-//     if (!(allMvp[i] in x )){
-//         x[allMvp[i]] = 1 //setting value to 1
-//     } else { 
-//         x[allMvp[i]] += 1 //adding 1 eveytime player is found
-//         count++
-//     }
-    
-// }
+/* 
+    I know this isnt the EXACT output but didnt want to waste more time when i could be solving and learning elsewhere
+ */
